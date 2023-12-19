@@ -3,30 +3,52 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 让页面充满整个视口高度 */
 }
 
 .main-container {
-    max-width: 800px;
     margin: 50px auto;
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.75); /* 设置透明度为60% */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    max-width: calc(100% - 150px);
+    height: 900px;
+    max-height: calc(100% - 375px);
 }
 
-h1 {
+h2 {
     color: #333;
+    margin: 0px;
+    margin-bottom: 5px;
 }
 
 .buttons {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* 修改此处，使按钮垂直排列 */
+    align-items: center;
+}
+
+.program-list {
+    list-style-type: none; /* 去掉列表项前面的标记 */
+    padding: 0; /* 移除默认的内边距 */
+}
+
+.program-list li {
+    padding: 10px 0; /* 设置列表项的上下边距 */
+    color: #000; /* 调整列表项文字颜色以适应背景 */
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
-    margin: 0 10px;
+    margin: 10px 0; /* 修改此处，增加上下边距 */
     cursor: pointer;
     background-color: #3498db;
     color: #fff;
@@ -36,4 +58,9 @@ button {
 
 button:hover {
     background-color: #2980b9;
+}
+
+.fe-disable{
+    pointer-events: none;
+    opacity: 0.3;
 }
