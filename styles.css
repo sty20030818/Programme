@@ -59,8 +59,3 @@ button {
 button:hover {
     background-color: #2980b9;
 }
-
-.fe-disable{
-    pointer-events: none;
-    opacity: 0.3;
-}

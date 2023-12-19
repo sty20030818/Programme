@@ -17,13 +17,20 @@
 </head>
 <body>
     <div class="main-container">
-        <h1>敬请期待</h1>
+        <h2>敬请期待</h2>
 
+        <p>凭此页截图兑换奖励</p>
         <div class="input-container">
+            <input type="text" id="class" placeholder="班级" required>
+            <input type="text" id="name" placeholder="姓名" required>
+            <input type="text" id="id" placeholder="学号" required>
+            <button onclick="generateRandomNumber()">生成你的号码</button>
             <button onclick="goBack()">返回</button>
         </div>
+        <div id="random-number-container"></div>
     </div>
 
+    <script src="input_script.js"></script>
     <script>
         function goBack() {
             window.history.back();

@@ -1,0 +1,60 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-container {
+    margin: 50px auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.75); /* 设置透明度为60% */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    max-width: calc(100% - 150px);
+    height: 900px;
+    max-height: calc(100% - 375px);
+}
+
+h2 {
+    color: #333;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 5px; /* 修改此处，增加上下边距 */
+}
+
+button:hover {
+    background-color: #2980b9;
+}
